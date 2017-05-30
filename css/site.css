@@ -1,0 +1,27 @@
+.bg-olive {
+  background-color: #6e8b3d;
+}
+
+.btn-olive {
+  color: #fff;
+  background-color: #6e8b3d;
+  border-color: #637d36;
+}
+
+.btn-olive:hover {
+  color: #fff;
+  background-color: #586f30;
+  border-color: #4d612a;
+}
+
+.parallax {
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.placeholder {
+  background-image: url("https://unsplash.it/1440/600?random");
+}
