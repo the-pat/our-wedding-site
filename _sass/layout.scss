@@ -49,14 +49,18 @@
 }
 
 .btn-olive {
-    color: #fff;
-    background-color: #6e8b3d;
-    box-shadow: 0 2px 0 0 #586f30;
+  color: #fff;
+  background-color: #6e8b3d;
+  box-shadow: 0 2px 0 0 #586f30;
 
-    &:hover {
-      color: #fff;
-      background-color: #586f30;
-    }
+  &:hover {
+    color: #fff;
+    background-color: #586f30;
+  }
+}
+
+.border-olive:focus {
+  border-color: #6e8b3d;
 }
 
 .text-olive {
