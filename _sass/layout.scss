@@ -75,12 +75,26 @@ a.text-olive {
   }
 }
 
+.registry-icon {
+  min-width: 150px;
+  max-width: 200px;
+  width: 100%;
+}
+
 .pad-top {
   padding-top: 60px;
 }
 
 .pad-bottom {
   padding-bottom: 60px;
+}
+
+.no-decoration {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 @media (max-width: 575px) {
