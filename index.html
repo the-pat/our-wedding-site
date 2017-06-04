@@ -4,13 +4,15 @@ permalink: /
 ---
 <header class="hero">
   <div class="container">
-    <h1>We're getting married!</h1>
-    <p class="lead">
-      We are so thankful that you are joining us in celebrating our love.
-    </p>
-    <p class="lead">
-      Please RSVP while you are here and feel free to contact us if you have any questions.
-    </p>
+    <div class="hard-to-see">
+      <h1>We're getting married!</h1>
+      <p class="lead">
+        We are so thankful that you are joining us in celebrating our love.
+      </p>
+      <p class="lead">
+        Please RSVP while you are here and feel free to contact us if you have any questions.
+      </p>
+    </div>
     <p class="lead">
       <a class="btn btn-olive btn-lg" href="#rsvp" role="button">RSVP</a>
     </p>
@@ -22,6 +24,8 @@ permalink: /
   </div>
 </header>
 {% include details.html %}
+<section class="parallax strip" style="background-image: url('/images/love-dip.jpg');"></section>
 {% include rsvp.html %}
+<section class="parallax strip" style="background-image: url('/images/nacl.jpg');"></section>
 {% include registry.html %}
 {% include contact.html %}

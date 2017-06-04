@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("https://unsplash.it/2000/1322");
+  background-image: url("/images/bojana-patrick-proposal.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -41,6 +41,32 @@
       opacity: 1;
     }
   }
+}
+
+.parallax {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.strip {
+  height: 15vh;
+  margin-top: 60px;
+}
+
+.schrodingers-cat {
+  background-image: url("/images/schrodingers-cat.jpg");
+}
+
+.hard-to-see {
+  padding: 5px 0 5px 5px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  background-color: rgba(110,139,61,0.8);
 }
 
 .bg-olive {
