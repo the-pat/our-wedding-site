@@ -1,4 +1,4 @@
-<section id="rsvp" class="pad-bottom">
+<section id="rsvp" class="pad-top">
   <div class="container">
     <h1>RSVP</h1>
     <hr class="my-4" />
@@ -20,11 +20,43 @@
           </div>
           <div class="form-group row">
             <div class="col-lg-8 col-md-12">
-              <label for="txtMessage" class="col-form-label">Message</label>
-              <textarea id="txtMessage" name="message" class="form-control border-olive" placeholder="Your message" rows="4"></textarea>
+              <label for="txtAddress1" class="col-form-label">Address</label>
+              <input id="txtAddress1" type="text" name="address line 1" class="form-control border-olive" placeholder="Your message" />
+              <small class="form-text text-muted">Street address, PO box, company, c/o</small>
             </div>
           </div>
-          <div id="guest0"></div>
+          <div class="form-group row">
+            <div class="col-lg-8 col-md-12">
+              <label for="txtAddress2" class="col-form-label">Address <small class="form-text text-muted">(optional)</small></label>
+              <input id="txtAddress2" type="text" name="address line 2" class="form-control border-olive" placeholder="Your address (optional)" />
+              <small class="form-text text-muted">Apartment, suite, unit, building, floor, etc.</small>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-lg-8 col-md-12">
+              <label for="txtCity" class="col-form-label">City</label>
+              <input id="txtCity" name="city" class="form-control border-olive" placeholder="Your address (optional)" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-lg-8 col-md-12">
+              <label for="txtState" class="col-form-label">State/Province/Region</label>
+              <input id="txtState" type="text" name="state/province/region" class="form-control border-olive" placeholder="Your state/province/region" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-lg-8 col-md-12">
+              <label for="txtZIP" class="col-form-label">ZIP/Postal Code</label>
+              <input id="txtZIP" type="number" step="1" name="zip code" class="form-control border-olive" placeholder="Your ZIP/postal code" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-lg-8 col-md-12">
+              <label for="ddlCountry" class="col-form-label">Country</label>
+              <select id="ddlCountry" class="form-control"></select>
+            </div>
+          </div>
+          <div id="guest1"></div>
           <div class="form-group row">
             <div class="col-lg-8">
               <a id="addGuest" href="javascript:void(0);" class="text-olive no-decoration">

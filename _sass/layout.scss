@@ -53,7 +53,7 @@
   background-color: #6e8b3d;
   box-shadow: 0 2px 0 0 #586f30;
 
-  &:hover {
+  &:hover, &:focus {
     color: #fff;
     background-color: #586f30;
   }
