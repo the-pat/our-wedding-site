@@ -1,31 +1,20 @@
 ---
 layout: default
-permalink: /
 ---
-<header class="hero">
-  <div class="container">
-    <div class="hard-to-see">
-      <h1>We're getting married!</h1>
-      <p class="lead">
-        We are so thankful that you are joining us in celebrating our love.
-      </p>
-      <p class="lead">
-        Please RSVP while you are here and feel free to contact us if you have any questions.
-      </p>
-    </div>
-    <p class="lead">
-      <a class="btn btn-olive btn-lg" href="#rsvp" role="button">RSVP</a>
-    </p>
-  </div>
-  <div class="wanna-know-more">
-    <a href="#when-where">
-      <span class="arrow">&#x25BC;</span> More info <span class="arrow">&#x25BC;</span>
-    </a>
-  </div>
-</header>
-{% include details.html %}
-<section class="parallax strip" style="background-image: url('/images/love-dip.jpg');"></section>
-{% include rsvp.html %}
-<section class="parallax strip" style="background-image: url('/images/nacl.jpg');"></section>
-{% include registry.html %}
-{% include contact.html %}
+
+<div class="home">
+
+  <h1>Posts</h1>
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
