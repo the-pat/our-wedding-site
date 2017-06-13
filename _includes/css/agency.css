@@ -69,11 +69,14 @@ h6 {
     background-color: #222;
 }
 
+.btn {
+  text-transform: uppercase;
+  font-family: {{ site.data.template.font.primary }};
+  font-weight: 700;
+}
+
 .btn-primary {
     border-color: #{{ site.data.template.color.primary }};
-    text-transform: uppercase;
-    font-family: {{ site.data.template.font.primary }};
-    font-weight: 700;
     color: #fff;
     background-color: #{{ site.data.template.color.primary }};
 }
@@ -662,14 +665,8 @@ aside.clients img {
 }
 
 section#contact {
-    background-color: #222;
-    background-image: url('{{ site.baseurl }}/img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
-}
-
-section#contact .section-heading {
-    color: #fff;
 }
 
 section#contact .form-group {
@@ -883,4 +880,7 @@ body {
   width: 75%;
   min-width: 150px;
   max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
