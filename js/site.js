@@ -46,7 +46,7 @@ $(function() {
       var state = $("input#rsvp-state").val();
       var zip = $("input#rsvp-zip").val();
       var country = $('select#rsvp-country').val();
-      var gotcha = $("input#rsvp-gotcha").val();
+      var _gotcha = $("input#rsvp-gotcha").val();
       var firstName = name;
 
       // Check for white space in name for Success/Fail message
@@ -55,6 +55,8 @@ $(function() {
       }
 
       var data = {
+        _subject: 'RSVP',
+        _gotcha,
         name,
         email,
         address1,
@@ -63,7 +65,6 @@ $(function() {
         state,
         zip,
         country,
-        gotcha,
       };
 
       var $guests = $('input[id^="rsvp-guest-"]');
